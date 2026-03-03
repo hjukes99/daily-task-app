@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "jest",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
   }
 }
