@@ -44,6 +44,73 @@ describe('TaskManager', () => {
         expect(() => taskManager.createTask('')).toThrow('Task title is required');
     });
 
+    describe('editTask', () => {
+        let taskId: string;
+
+        beforeEach(() => {
+            const task = taskManager.createTask('Initial Task', 'Initial Desc', Priority.Medium, new Date('2023-01-01'));
+            taskId = task.id;
+        });
+
+        it('should update task title', () => {
+            const updatedTask = taskManager.editTask(taskId, { title: 'Updated Task' });
+            expect(updatedTask.title).toBe('Updated Task');
+            expect(taskManager.getTasks()[0].title).toBe('Updated Task');
+        });
+
+        it('should update task description', () => {
+            const updatedTask = taskManager.editTask(taskId, { description: 'Updated Desc' });
+            expect(updatedTask.description).toBe('Updated Desc');
+            expect(taskManager.getTasks()[0].description).toBe('Updated Desc');
+        });
+
+        it('should update task priority', () => {
+            const updatedTask = taskManager.editTask(taskId, { priority: Priority.High });
+            expect(updatedTask.priority).toBe(Priority.High);
+            expect(taskManager.getTasks()[0].priority).toBe(Priority.High);
+        });
+
+        it('should update task dueDate', () => {
+            const newDate = new Date('2023-12-31');
+            const updatedTask = taskManager.editTask(taskId, { dueDate: newDate });
+            expect(updatedTask.dueDate).toBe(newDate);
+            expect(taskManager.getTasks()[0].dueDate).toBe(newDate);
+        });
+
+        it('should update task completed status', () => {
+            const updatedTask = taskManager.editTask(taskId, { completed: true });
+            expect(updatedTask.completed).toBe(true);
+            expect(taskManager.getTasks()[0].completed).toBe(true);
+        });
+
+        it('should allow updating multiple fields at once', () => {
+            const newDate = new Date('2024-01-01');
+            const updatedTask = taskManager.editTask(taskId, {
+                title: 'New Title',
+                description: 'New Desc',
+                priority: Priority.Low,
+                dueDate: newDate,
+                completed: true
+            });
+
+            expect(updatedTask.title).toBe('New Title');
+            expect(updatedTask.description).toBe('New Desc');
+            expect(updatedTask.priority).toBe(Priority.Low);
+            expect(updatedTask.dueDate).toBe(newDate);
+            expect(updatedTask.completed).toBe(true);
+        });
+
+        it('should throw an error if task ID does not exist', () => {
+            expect(() => taskManager.editTask('non-existent-id', { title: 'New Title' }))
+                .toThrow('Task with ID non-existent-id not found');
+        });
+
+        it('should throw an error if updating title to empty', () => {
+            expect(() => taskManager.editTask(taskId, { title: '' }))
+                .toThrow('Task title cannot be empty');
+        });
+    });
+
     describe('getTasks', () => {
         beforeEach(() => {
             const task1 = taskManager.createTask('Task 1', 'Desc 1', Priority.High);

@@ -29,6 +29,31 @@ export class TaskManager {
         return task;
     }
 
+    editTask(id: string, updates: Partial<Omit<Task, 'id' | 'createdAt'>>): Task {
+        const task = this.tasks.find(t => t.id === id);
+        if (!task) {
+            throw new Error(`Task with ID ${id} not found`);
+        }
+
+        if (updates.title !== undefined) {
+            task.updateTitle(updates.title);
+        }
+        if (updates.description !== undefined) {
+            task.description = updates.description;
+        }
+        if (updates.priority !== undefined) {
+            task.priority = updates.priority;
+        }
+        if (updates.dueDate !== undefined) {
+            task.dueDate = updates.dueDate;
+        }
+        if (updates.completed !== undefined) {
+            task.completed = updates.completed;
+        }
+
+        return task;
+    }
+
     getTasks(filters?: TaskFilters): Task[] {
         let result = this.tasks;
 

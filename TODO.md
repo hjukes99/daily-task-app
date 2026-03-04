@@ -1,7 +1,7 @@
 *   [x] Create basic task model
 *   [x] Implement task creation
 *   [x] Implement task listing
-*   [ ] Implement task editing
+*   [x] Implement task editing
 *   [ ] Implement task deletion
 *   [ ] Implement priority setting
 *   [ ] Implement due date setting
