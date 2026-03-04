@@ -1,4 +1,4 @@
-*   [ ] Create basic task model
+*   [x] Create basic task model
 *   [ ] Implement task creation
 *   [ ] Implement task listing
 *   [ ] Implement task editing

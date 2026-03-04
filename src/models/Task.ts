@@ -20,6 +20,7 @@ export class Task {
     completed: boolean;
     priority?: Priority;
     dueDate?: Date;
+    createdAt: Date;
 
     constructor(data: TaskData) {
         if (!data.id) {
@@ -35,6 +36,7 @@ export class Task {
         this.completed = data.completed ?? false;
         this.priority = data.priority;
         this.dueDate = data.dueDate;
+        this.createdAt = new Date();
     }
 
     markComplete(): void {

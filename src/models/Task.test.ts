@@ -9,6 +9,7 @@ describe('Task Model', () => {
         expect(task.description).toBeUndefined();
         expect(task.priority).toBeUndefined();
         expect(task.dueDate).toBeUndefined();
+        expect(task.createdAt).toBeInstanceOf(Date);
     });
 
     it('should create a task with all fields provided', () => {
@@ -28,6 +29,7 @@ describe('Task Model', () => {
         expect(task.completed).toBe(true);
         expect(task.priority).toBe(Priority.High);
         expect(task.dueDate).toBe(dueDate);
+        expect(task.createdAt).toBeInstanceOf(Date);
     });
 
     it('should throw an error if id is missing', () => {
