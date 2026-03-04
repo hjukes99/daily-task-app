@@ -1,20 +1,12 @@
-[
-  {
-    "session_id": "3641988848058404632",
-    "status": "created",
-    "timestamp": "2026-03-04T04:17:31.039188",
-    "todo": "Create basic task model"
-  },
-  {
-    "session_id": "15450339395978484410",
-    "status": "applied",
-    "timestamp": "2026-03-04T05:16:35.855121",
-    "notes": "Pulled with --apply by hourly orchestrator; npm test passed; committed/pushed."
-  },
-  {
-    "session_id": "2690457835702849411",
-    "status": "created",
-    "timestamp": "2026-03-04T07:17:04",
-    "todo": "Implement task creation"
-  }
-]
+{
+  "sessions": [
+    {
+      "id": "3770892304874696580",
+      "repo": "hjukes99/daily-task-app",
+      "status": "applied",
+      "created_at": "2026-03-04T10:16:24.574210",
+      "task": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item 'Implement task listing' and keep tests passing.",
+      "applied_at": "2026-03-04T12:16:31.408124"
+    }
+  ]
+}

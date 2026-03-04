@@ -1,5 +1,10 @@
 import { Task, Priority } from './Task';
 
+export interface TaskFilters {
+    completed?: boolean;
+    priority?: Priority;
+}
+
 export class TaskManager {
     private tasks: Task[] = [];
     private nextId: number = 1;
@@ -24,7 +29,18 @@ export class TaskManager {
         return task;
     }
 
-    getTasks(): Task[] {
-        return [...this.tasks];
+    getTasks(filters?: TaskFilters): Task[] {
+        let result = this.tasks;
+
+        if (filters) {
+            if (filters.completed !== undefined) {
+                result = result.filter(task => task.completed === filters.completed);
+            }
+            if (filters.priority !== undefined) {
+                result = result.filter(task => task.priority === filters.priority);
+            }
+        }
+
+        return [...result];
     }
 }
