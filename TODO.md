@@ -1,5 +1,5 @@
 *   [x] Create basic task model
-*   [ ] Implement task creation
+*   [x] Implement task creation
 *   [ ] Implement task listing
 *   [ ] Implement task editing
 *   [ ] Implement task deletion
