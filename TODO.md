@@ -5,5 +5,5 @@
 *   [x] Implement task deletion
 *   [x] Implement priority setting
 *   [x] Implement due date setting
-*   [ ] Implement basic UI
+*   [x] Implement basic UI
 *   [ ] Add basic tests
