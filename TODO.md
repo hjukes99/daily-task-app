@@ -3,7 +3,7 @@
 *   [x] Implement task listing
 *   [x] Implement task editing
 *   [x] Implement task deletion
-*   [ ] Implement priority setting
+*   [x] Implement priority setting
 *   [ ] Implement due date setting
 *   [ ] Implement basic UI
 *   [ ] Add basic tests

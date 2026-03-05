@@ -70,4 +70,22 @@ describe('Task Model', () => {
             expect(() => task.updateTitle('')).toThrow('Task title cannot be empty');
         });
     });
+
+    describe('updatePriority', () => {
+        it('should update the task priority', () => {
+            const task = new Task({ id: '1', title: 'Test Task' });
+            expect(task.priority).toBeUndefined();
+            task.updatePriority(Priority.High);
+            expect(task.priority).toBe(Priority.High);
+            task.updatePriority(Priority.Low);
+            expect(task.priority).toBe(Priority.Low);
+        });
+
+        it('should allow clearing the task priority', () => {
+            const task = new Task({ id: '1', title: 'Test Task', priority: Priority.Medium });
+            expect(task.priority).toBe(Priority.Medium);
+            task.updatePriority(undefined);
+            expect(task.priority).toBeUndefined();
+        });
+    });
 });

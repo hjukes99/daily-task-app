@@ -53,4 +53,8 @@ export class Task {
         }
         this.title = newTitle;
     }
+
+    updatePriority(newPriority?: Priority): void {
+        this.priority = newPriority;
+    }
 }

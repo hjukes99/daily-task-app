@@ -50,13 +50,17 @@ export class TaskManager {
             task.description = updates.description;
         }
         if (updates.priority !== undefined) {
-            task.priority = updates.priority;
+            task.updatePriority(updates.priority);
         }
         if (updates.dueDate !== undefined) {
             task.dueDate = updates.dueDate;
         }
         if (updates.completed !== undefined) {
-            task.completed = updates.completed;
+            if (updates.completed) {
+                task.markComplete();
+            } else {
+                task.markIncomplete();
+            }
         }
 
         return task;
