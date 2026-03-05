@@ -111,6 +111,26 @@ describe('TaskManager', () => {
         });
     });
 
+    describe('deleteTask', () => {
+        let taskId: string;
+
+        beforeEach(() => {
+            const task = taskManager.createTask('Initial Task', 'Initial Desc', Priority.Medium, new Date('2023-01-01'));
+            taskId = task.id;
+        });
+
+        it('should delete a task if the ID exists', () => {
+            taskManager.deleteTask(taskId);
+            const tasks = taskManager.getTasks();
+            expect(tasks.length).toBe(0);
+        });
+
+        it('should throw an error if the task ID does not exist', () => {
+            expect(() => taskManager.deleteTask('non-existent-id'))
+                .toThrow('Task with ID non-existent-id not found');
+        });
+    });
+
     describe('getTasks', () => {
         beforeEach(() => {
             const task1 = taskManager.createTask('Task 1', 'Desc 1', Priority.High);
