@@ -88,4 +88,22 @@ describe('Task Model', () => {
             expect(task.priority).toBeUndefined();
         });
     });
+
+    describe('updateDueDate', () => {
+        it('should update the task due date', () => {
+            const task = new Task({ id: '1', title: 'Test Task' });
+            expect(task.dueDate).toBeUndefined();
+            const dueDate = new Date('2023-12-31');
+            task.updateDueDate(dueDate);
+            expect(task.dueDate).toBe(dueDate);
+        });
+
+        it('should allow clearing the task due date', () => {
+            const dueDate = new Date('2023-12-31');
+            const task = new Task({ id: '1', title: 'Test Task', dueDate: dueDate });
+            expect(task.dueDate).toBe(dueDate);
+            task.updateDueDate(undefined);
+            expect(task.dueDate).toBeUndefined();
+        });
+    });
 });

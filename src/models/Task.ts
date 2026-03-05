@@ -57,4 +57,8 @@ export class Task {
     updatePriority(newPriority?: Priority): void {
         this.priority = newPriority;
     }
+
+    updateDueDate(newDueDate?: Date): void {
+        this.dueDate = newDueDate;
+    }
 }
