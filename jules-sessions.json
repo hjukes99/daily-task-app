@@ -1,42 +1,102 @@
 {
+  "updated_at": "2026-03-05 20:17:54 CST",
+  "repo": "hjukes99/daily-task-app",
   "sessions": [
     {
-      "id": "8975055397700466588",
-      "repo": "hjukes99/daily-task-app",
-      "status": "created",
-      "created_at": "2026-03-05T04:16:11.501947",
-      "task": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item 'Implement priority setting' and keep tests passing."
-    },
-    {
-      "session_id": "12938087841824142484",
-      "repo": "hjukes99/daily-task-app",
-      "status": "applied",
-      "applied_at": "2026-03-05 08:15:00 CST",
-      "tests": "pass",
-      "build": "not-run",
-      "commit": "210432b"
+      "id": "9766492599980048603",
+      "desc": "Codex Lab: Daily Task App \u2014 complete TODO item 'Add basic tests' and keep tests passing.",
+      "repo_field": "hjukes99/daily-task-app",
+      "status": "Planning"
     },
     {
       "id": "16979475208027131036",
-      "repo": "hjukes99/daily-task-app",
-      "status": "created",
-      "created_at": "2026-03-05T10:16:42.417529",
-      "task": "Codex Lab: Daily Task App \u2014 complete TODO item 'Implement basic UI' and keep tests passing."
+      "desc": "Codex Lab: Daily Task App \u2014 complete TODO item 'Implement b\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
     },
     {
-      "session_id": "16979475208027131036",
-      "repo": "hjukes99/daily-task-app",
-      "status": "applied",
-      "applied_at": "2026-03-05 12:19:00 CST",
-      "tests": "pass"
+      "id": "12938087841824142484",
+      "desc": "Codex Lab: Daily Task App \u2014 complete TODO item 'Implement d\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
     },
     {
-      "session_id": "8975055397700466588",
-      "repo": "hjukes99/daily-task-app",
-      "status": "applied",
-      "applied_at": "2026-03-05 13:17:11 ",
-      "tests": "pass",
-      "build": "pass"
+      "id": "8975055397700466588",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "9710716960979656247",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "17673964902039332030",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "840111384845370661",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "3770892304874696580",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "2690457835702849411",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "3641988848058404632",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "15450339395978484410",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "9489329822667465177",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "11355859393866948152",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "5287612378668753186",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Awaiting Plan A"
+    },
+    {
+      "id": "11545161460918381912",
+      "desc": "Codex Lab: 2026-03-02-daily-task-app-1 \u2014 complete TODO item\u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
+    },
+    {
+      "id": "8307433009183173018",
+      "desc": "Codex Lab: Daily Task App \u2014 implement the top 3 TODO items \u2026",
+      "repo_field": "hjukes99/daily-task-a\u2026",
+      "status": "Completed"
     }
   ]
 }
