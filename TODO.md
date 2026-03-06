@@ -6,4 +6,4 @@
 *   [x] Implement priority setting
 *   [x] Implement due date setting
 *   [x] Implement basic UI
-*   [ ] Add basic tests
+*   [x] Add basic tests
