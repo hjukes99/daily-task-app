@@ -1,12 +1,13 @@
 {
-  "updated_at": "2026-03-06 03:16:58",
+  "updated_at": "2026-03-06 22:17:05 ",
   "repo": "hjukes99/daily-task-app",
   "sessions": [
     {
       "id": "9766492599980048603",
       "desc": "Codex Lab: Daily Task App \u2014 complete TODO item 'Add basic tests' and keep tests passing.",
       "repo_field": "hjukes99/daily-task-app",
-      "status": "Planning"
+      "status": "Applied",
+      "appliedAt": "2026-03-06T22:17:05.378139"
     },
     {
       "id": "16979475208027131036",
@@ -104,7 +105,9 @@
       "applied": true,
       "timestamp": "2026-03-06T00:16:41",
       "test": "pass",
-      "push": "pushed"
+      "push": "pushed",
+      "status": "Applied",
+      "appliedAt": "2026-03-06T22:17:05.378150"
     },
     {
       "id": "16979475208027131036",
